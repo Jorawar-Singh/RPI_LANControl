@@ -14,7 +14,7 @@ Maintainer: Jorawar Singh <jjchandi.singh@gmail.com>
 
 Category: Hardware
 
-License: CeCILL
+License: CeCILL, GPL-3.0
 
 ScilabVersion: >= 5.3
 
