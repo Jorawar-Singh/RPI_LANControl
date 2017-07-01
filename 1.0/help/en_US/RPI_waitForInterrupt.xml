@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_waitForInterrupt.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_waitForInterrupt" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_waitForInterrupt</refname>
+    <refpurpose>Function to set a pin to wait for interrupt.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   i=RPI_waitForInterrupt(pin,timeOut)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pin    :</term>
+      <listitem><para> The pin to check for interrupt. Numbering sequence to be followed as initiated using RPI_pinNumbering function.</para></listitem></varlistentry>
+   <varlistentry><term>timeOut:</term>
+      <listitem><para> The time (in milliseconds) for which to wait for interrupt. -1 to wait forever.</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+When called, it will wait for an interrupt event to happen on that pin and the program will be stalled. The return value is -1 if an error occurred (and errno will be set appropriately), 0 if it timed out, or 1 on a successful interrupt event.
+   </para>
+   <para>
+Before using RPI_waitForInterrupt, first initialise the GPIO pin and at present the only way to do this is to use the gpio program, either in a script, or using the system() call from inside the program.
+Eg: To wait for a falling-edge interrupt on GPIO pin 0, setup the hardware using (before running the program):
+gpio edge 0 falling
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+i=RPI_waitForInterrupt(0,5000)
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

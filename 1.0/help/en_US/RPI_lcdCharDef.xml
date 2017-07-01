@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_lcdCharDef.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_lcdCharDef" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_lcdCharDef</refname>
+    <refpurpose>Function to redefine a user-definable character</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_lcdCharDef(fd,index,data)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>fd   :</term>
+      <listitem><para> file-descriptor obtained using RPI_lcdInit function</para></listitem></varlistentry>
+   <varlistentry><term>index:</term>
+      <listitem><para> which character to redefine (0 to 7)</para></listitem></varlistentry>
+   <varlistentry><term>d0-d7:</term>
+      <listitem><para> integers from 0 to 255 erpresenting the elements of the array to form the character</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function re-define one of the 8 user-definable characters in the display.
+   </para>
+   <para>
+The data array is 8 bytes which represent the character from the top-line to the bottom line. Note that the characters are actually 5×8, so only the lower 5 bits are used.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_lcdCharDef(13,0,0,0,0,31,31,31,31,0)
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_lcdCursorBlink,">RPI_lcdClear, RPI_lcdCursor, RPI_lcdDisplay, RPI_lcdHome, RPI_lcdInit, RPI_lcdPutchar, RPI_lcdPosition, RPI_lcdPrintf, RPI_lcdPuts, RPI_lcdSendCommand</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

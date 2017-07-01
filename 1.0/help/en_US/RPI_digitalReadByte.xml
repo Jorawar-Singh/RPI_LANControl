@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_digitalReadByte.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_digitalReadByte" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_digitalReadByte</refname>
+    <refpurpose>Function to read first 8 GPIO pins</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   b=RPI_digitalReadByte()
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function read the state of the first eight GPIO pins at once. The state is read from pin0 to pin7.
+   </para>
+   <para>
+Note: The MSB-LSB sequence here is opposite of that of the RPI_digitalWriteByte.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+b=RPI_digitalReadByte()
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_digitalWriteByte,">RPI_digitalRead</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

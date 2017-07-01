@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_pinModeAlt.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_pinModeAlt" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_pinModeAlt</refname>
+    <refpurpose>Function to set the current mode of pin</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_pinModeAlt(pin,ALTMode)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pin    :</term>
+      <listitem><para> The pin number to read the voltage from. Numbering sequence to be followed as initiated using RPI_pinNumbering function.</para></listitem></varlistentry>
+   <varlistentry><term>ALTMode:</term>
+      <listitem><para> integer, from 0 to 7</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function sets the mode of the pin to either of the general GPIO (also set through RPI_pinMode function) or the alternatives available (not accessible through RPI_pinMode function).
+   </para>
+   <para>
+ALTMode can take the following values:
+<itemizedlist>
+<listitem>0 : Input</listitem>
+<listitem>1 : Output</listitem>
+<listitem>2 : ALT5</listitem>
+<listitem>3 : ALT4</listitem>
+<listitem>4 : ALT0</listitem>
+<listitem>5 : ALT1</listitem>
+<listitem>6 : ALT2</listitem>
+<listitem>7 : ALT3</listitem>
+</itemizedlist>
+   </para>
+   <para>
+The list of Alternate functions of all the pins can be found on page 102 of the official documentation: https://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/BCM2835-ARM-Peripherals.pdf
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_pinModeAlt(1,2)
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_pinMode,">RPI_pinNumbering, RPI_getAlt</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

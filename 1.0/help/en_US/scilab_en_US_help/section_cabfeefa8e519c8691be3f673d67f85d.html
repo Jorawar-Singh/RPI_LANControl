@@ -1,0 +1,655 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="index.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">Raspberry Pi LAN Control</a> &gt;&gt; Raspberry Pi LAN Control</span>
+
+    <br /><br />
+    <h3 class="title-part">Raspberry Pi LAN Control</h3>
+<ul class="list-chapter"><li><a href="RPI_I2CRead.html" class="refentry">RPI_I2CRead</a> &#8212; <span class="refentry-description">Function to read device</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CReadReg16.html" class="refentry">RPI_I2CReadReg16</a> &#8212; <span class="refentry-description">Function to read 16-bit valu from the register</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CReadReg8.html" class="refentry">RPI_I2CReadReg8</a> &#8212; <span class="refentry-description">Function to read 8-bit valu from the register</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CSetup.html" class="refentry">RPI_I2CSetup</a> &#8212; <span class="refentry-description">Function to initialize the I2C system</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CSetupInterface.html" class="refentry">RPI_I2CSetupInterface</a> &#8212; <span class="refentry-description">Function to select different I2C interfaces</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CWrite.html" class="refentry">RPI_I2CWrite</a> &#8212; <span class="refentry-description">Function to write to device</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CWriteReg16.html" class="refentry">RPI_I2CWriteReg16</a> &#8212; <span class="refentry-description">Function to write 16-bit data to register</span></li>
+
+
+
+
+
+<li><a href="RPI_I2CWriteReg8.html" class="refentry">RPI_I2CWriteReg8</a> &#8212; <span class="refentry-description">Function to write 8-bit data to register</span></li>
+
+
+
+
+
+<li><a href="RPI_SPIDataRW.html" class="refentry">RPI_SPIDataRW</a> &#8212; <span class="refentry-description">Function to perform simultaneous read-write on SPI</span></li>
+
+
+
+
+
+<li><a href="RPI_SPISetup.html" class="refentry">RPI_SPISetup</a> &#8212; <span class="refentry-description">Function to initialize SPI</span></li>
+
+
+
+
+
+<li><a href="RPI_adress.html" class="refentry">RPI_adress</a> &#8212; <span class="refentry-description">Function for non-ssh connection to raspberry pi</span></li>
+
+
+
+
+
+<li><a href="RPI_analogRead.html" class="refentry">RPI_analogRead</a> &#8212; <span class="refentry-description">Function to read the analog voltage at the given pin</span></li>
+
+
+
+
+
+<li><a href="RPI_analogWrite.html" class="refentry">RPI_analogWrite</a> &#8212; <span class="refentry-description">Function to set analog voltage at given analog pin.</span></li>
+
+
+
+
+
+<li><a href="RPI_boardRev.html" class="refentry">RPI_boardRev</a> &#8212; <span class="refentry-description">Function to print the board revision.</span></li>
+
+
+
+
+
+<li><a href="RPI_commande.html" class="refentry">RPI_commande</a> &#8212; <span class="refentry-description">Function to facilitate the toolbox. Not for open use by the user.</span></li>
+
+
+
+
+
+<li><a href="RPI_delay.html" class="refentry">RPI_delay</a> &#8212; <span class="refentry-description">Function to introduce delay in milliseconds</span></li>
+
+
+
+
+
+<li><a href="RPI_delayMicro.html" class="refentry">RPI_delayMicro</a> &#8212; <span class="refentry-description">Function to introduce delay in microseconds</span></li>
+
+
+
+
+
+<li><a href="RPI_digitalRead.html" class="refentry">RPI_digitalRead</a> &#8212; <span class="refentry-description">Function to read the digital voltage at the given pin</span></li>
+
+
+
+
+
+<li><a href="RPI_digitalReadByte.html" class="refentry">RPI_digitalReadByte</a> &#8212; <span class="refentry-description">Function to read first 8 GPIO pins</span></li>
+
+
+
+
+
+<li><a href="RPI_digitalWrite.html" class="refentry">RPI_digitalWrite</a> &#8212; <span class="refentry-description">Function to set digital voltage at the given pin</span></li>
+
+
+
+
+
+<li><a href="RPI_digitalWriteByte.html" class="refentry">RPI_digitalWriteByte</a> &#8212; <span class="refentry-description">Function to set first eight GPIO pins to a particular value</span></li>
+
+
+
+
+
+<li><a href="RPI_gertboardAnalogRead.html" class="refentry">RPI_gertboardAnalogRead</a> &#8212; <span class="refentry-description">Function to read voltage from gertboard</span></li>
+
+
+
+
+
+<li><a href="RPI_gertboardAnalogSetup.html" class="refentry">RPI_gertboardAnalogSetup</a> &#8212; <span class="refentry-description">Function to setup the gertboard</span></li>
+
+
+
+
+
+<li><a href="RPI_gertboardAnalogWrite.html" class="refentry">RPI_gertboardAnalogWrite</a> &#8212; <span class="refentry-description">Function to write voltage value to pins on gertboard</span></li>
+
+
+
+
+
+<li><a href="RPI_gertboardSPISetup.html" class="refentry">RPI_gertboardSPISetup</a> &#8212; <span class="refentry-description">Function to initialize SPI bus communication with gertboard</span></li>
+
+
+
+
+
+<li><a href="RPI_getAlt.html" class="refentry">RPI_getAlt</a> &#8212; <span class="refentry-description">Function to get the current mode of pin</span></li>
+
+
+
+
+
+<li><a href="RPI_i2cdetect.html" class="refentry">RPI_i2cdetect</a> &#8212; <span class="refentry-description">Function to get the address of attached i2c device</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64Orientation.html" class="refentry">RPI_lcd128x64Orientation</a> &#8212; <span class="refentry-description">Function to set lcd orientation.</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64circle.html" class="refentry">RPI_lcd128x64circle</a> &#8212; <span class="refentry-description">Function to draw a circle</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64clear.html" class="refentry">RPI_lcd128x64clear</a> &#8212; <span class="refentry-description">Function to clear the lcd screen</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64ellipse.html" class="refentry">RPI_lcd128x64ellipse</a> &#8212; <span class="refentry-description">Function to draw a ellipse</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64line.html" class="refentry">RPI_lcd128x64line</a> &#8212; <span class="refentry-description">Function to plota line.</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64lineTo.html" class="refentry">RPI_lcd128x64lineTo</a> &#8212; <span class="refentry-description">Function to plot a line</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64point.html" class="refentry">RPI_lcd128x64point</a> &#8212; <span class="refentry-description">Function to plot a point</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64putchar.html" class="refentry">RPI_lcd128x64putchar</a> &#8212; <span class="refentry-description">Function to print a single character.</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64puts.html" class="refentry">RPI_lcd128x64puts</a> &#8212; <span class="refentry-description">Function to send a string to the lcd display</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64rectangle.html" class="refentry">RPI_lcd128x64rectangle</a> &#8212; <span class="refentry-description">Function to draw a rectangle</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64setOrigin.html" class="refentry">RPI_lcd128x64setOrigin</a> &#8212; <span class="refentry-description">Function to set origin</span></li>
+
+
+
+
+
+<li><a href="RPI_lcd128x64setup.html" class="refentry">RPI_lcd128x64setup</a> &#8212; <span class="refentry-description">Function to initialize the lcd display</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdCharDef.html" class="refentry">RPI_lcdCharDef</a> &#8212; <span class="refentry-description">Function to redefine a user-definable character</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdClear.html" class="refentry">RPI_lcdClear</a> &#8212; <span class="refentry-description">Function to clear the lcd screen</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdCursor.html" class="refentry">RPI_lcdCursor</a> &#8212; <span class="refentry-description">Function to turn cursor on/off</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdCursorBlink.html" class="refentry">RPI_lcdCursorBlink</a> &#8212; <span class="refentry-description">Function to turn cursor blinking on/off</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdDisplay.html" class="refentry">RPI_lcdDisplay</a> &#8212; <span class="refentry-description">Function to turn display on/off</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdHome.html" class="refentry">RPI_lcdHome</a> &#8212; <span class="refentry-description">Function to send cursor back to the starting point (home)</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdInit.html" class="refentry">RPI_lcdInit</a> &#8212; <span class="refentry-description">Function to initialize lcd</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdPosition.html" class="refentry">RPI_lcdPosition</a> &#8212; <span class="refentry-description">Function to move the cursor</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdPrintf.html" class="refentry">RPI_lcdPrintf</a> &#8212; <span class="refentry-description">Function to print on the lcd screen</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdPutchar.html" class="refentry">RPI_lcdPutchar</a> &#8212; <span class="refentry-description">Function to print on the lcd screen</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdPuts.html" class="refentry">RPI_lcdPuts</a> &#8212; <span class="refentry-description">Function to print on the lcd screen</span></li>
+
+
+
+
+
+<li><a href="RPI_lcdSendCommand.html" class="refentry">RPI_lcdSendCommand</a> &#8212; <span class="refentry-description">Function to send command to lcd</span></li>
+
+
+
+
+
+<li><a href="RPI_lock.html" class="refentry">RPI_lock</a> &#8212; <span class="refentry-description">Function to synchronize variable updates from the main program to any threads running in the program</span></li>
+
+
+
+
+
+<li><a href="RPI_mcp23008Setup.html" class="refentry">RPI_mcp23008Setup</a> &#8212; <span class="refentry-description">Function for setting up 8-bit MCP23008 I2C GPIO expansion chip.</span></li>
+
+
+
+
+
+<li><a href="RPI_mcp23016Setup.html" class="refentry">RPI_mcp23016Setup</a> &#8212; <span class="refentry-description">Function for setting up 16-bit MCP23016 I2C GPIO expansion chip.</span></li>
+
+
+
+
+
+<li><a href="RPI_mcp23017Setup.html" class="refentry">RPI_mcp23017Setup</a> &#8212; <span class="refentry-description">Function for setting up 16-bit MCP23017 I2C GPIO expansion chip.</span></li>
+
+
+
+
+
+<li><a href="RPI_mcp23s08Setup.html" class="refentry">RPI_mcp23s08Setup</a> &#8212; <span class="refentry-description">Function for setting up 8-bit MCP23s08 SPI GPIO expansion chip.</span></li>
+
+
+
+
+
+<li><a href="RPI_mcp23s17Setup.html" class="refentry">RPI_mcp23s17Setup</a> &#8212; <span class="refentry-description">Function for setting up 16-bit MCP23s17 SPI GPIO expansion chip.</span></li>
+
+
+
+
+
+<li><a href="RPI_micros.html" class="refentry">RPI_micros</a> &#8212; <span class="refentry-description">Function to display the number of microseconds since the call to RPI_pinNumbering function.</span></li>
+
+
+
+
+
+<li><a href="RPI_millis.html" class="refentry">RPI_millis</a> &#8212; <span class="refentry-description">Function to display the number of milliseconds since the call to RPI_pinNumbering function.</span></li>
+
+
+
+
+
+<li><a href="RPI_padDrive.html" class="refentry">RPI_padDrive</a> &#8212; <span class="refentry-description">Function to set the &#0039;strength&#0039; of the pad drivers for a particular group of pins</span></li>
+
+
+
+
+
+<li><a href="RPI_pcf8574Setup.html" class="refentry">RPI_pcf8574Setup</a> &#8212; <span class="refentry-description">Function for setting up PCF8574 8-bit GPIO expander IC</span></li>
+
+
+
+
+
+<li><a href="RPI_pcf8591Setup.html" class="refentry">RPI_pcf8591Setup</a> &#8212; <span class="refentry-description">Function for setting up 8-bit PCF8591 Analog IO expander IC</span></li>
+
+
+
+
+
+<li><a href="RPI_physToGpio.html" class="refentry">RPI_physToGpio</a> &#8212; <span class="refentry-description">Function to check the GPIO pin number corresponding to given physical pin number.</span></li>
+
+
+
+
+
+<li><a href="RPI_piGlow1.html" class="refentry">RPI_piGlow1</a> &#8212; <span class="refentry-description">Function to modify a single LED on the piGlow</span></li>
+
+
+
+
+
+<li><a href="RPI_piGlowLeg.html" class="refentry">RPI_piGlowLeg</a> &#8212; <span class="refentry-description">Function to modify a full leg of LEDs on the piGlow</span></li>
+
+
+
+
+
+<li><a href="RPI_piGlowRing.html" class="refentry">RPI_piGlowRing</a> &#8212; <span class="refentry-description">Function to modify a full ring of LEDs on the piGlow</span></li>
+
+
+
+
+
+<li><a href="RPI_piGlowSetup.html" class="refentry">RPI_piGlowSetup</a> &#8212; <span class="refentry-description">Function to initialize the piGlow board</span></li>
+
+
+
+
+
+<li><a href="RPI_pinMode.html" class="refentry">RPI_pinMode</a> &#8212; <span class="refentry-description">Function to set the mode of the given pin.</span></li>
+
+
+
+
+
+<li><a href="RPI_pinModeAlt.html" class="refentry">RPI_pinModeAlt</a> &#8212; <span class="refentry-description">Function to set the current mode of pin</span></li>
+
+
+
+
+
+<li><a href="RPI_pinNumbering.html" class="refentry">RPI_pinNumbering</a> &#8212; <span class="refentry-description">Function to initialize wiringpi with the number sequence to be followed.</span></li>
+
+
+
+
+
+<li><a href="RPI_priority.html" class="refentry">RPI_priority</a> &#8212; <span class="refentry-description">Function to set the priority for the program.</span></li>
+
+
+
+
+
+<li><a href="RPI_pullControl.html" class="refentry">RPI_pullControl</a> &#8212; <span class="refentry-description">Function to change the internal pull up/down resistor setting for a given pin.</span></li>
+
+
+
+
+
+<li><a href="RPI_pwmClock.html" class="refentry">RPI_pwmClock</a> &#8212; <span class="refentry-description">Function to set the divisor for the PWM clock.</span></li>
+
+
+
+
+
+<li><a href="RPI_pwmMode.html" class="refentry">RPI_pwmMode</a> &#8212; <span class="refentry-description">Function to set the mode for the PWM generator</span></li>
+
+
+
+
+
+<li><a href="RPI_pwmRange.html" class="refentry">RPI_pwmRange</a> &#8212; <span class="refentry-description">Function to set the divisor for the PWM clock.</span></li>
+
+
+
+
+
+<li><a href="RPI_pwmToneWrite.html" class="refentry">RPI_pwmToneWrite</a> &#8212; <span class="refentry-description">Function to write a tone of a given frequency to the pin</span></li>
+
+
+
+
+
+<li><a href="RPI_pwmWrite.html" class="refentry">RPI_pwmWrite</a> &#8212; <span class="refentry-description">Function to write voltage value to the PWM register for the given pin.</span></li>
+
+
+
+
+
+<li><a href="RPI_send.html" class="refentry">RPI_send</a> &#8212; <span class="refentry-description">Function to facilitate the toolbox. Not for open use by the user.</span></li>
+
+
+
+
+
+<li><a href="RPI_serialClose.html" class="refentry">RPI_serialClose</a> &#8212; <span class="refentry-description">Function to close and open serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialDataAvail.html" class="refentry">RPI_serialDataAvail</a> &#8212; <span class="refentry-description">Function to get number of readable character from the serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialFlush.html" class="refentry">RPI_serialFlush</a> &#8212; <span class="refentry-description">Function to discard all data to/from the serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialGetchar.html" class="refentry">RPI_serialGetchar</a> &#8212; <span class="refentry-description">Function to get next character from serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialOpen.html" class="refentry">RPI_serialOpen</a> &#8212; <span class="refentry-description">Function to initialize a serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialPrintf.html" class="refentry">RPI_serialPrintf</a> &#8212; <span class="refentry-description">Function to print to serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialPutchar.html" class="refentry">RPI_serialPutchar</a> &#8212; <span class="refentry-description">Function to send a single byte to the serial device</span></li>
+
+
+
+
+
+<li><a href="RPI_serialPuts.html" class="refentry">RPI_serialPuts</a> &#8212; <span class="refentry-description">Function to send a null-terminalted string</span></li>
+
+
+
+
+
+<li><a href="RPI_shiftIn.html" class="refentry">RPI_shiftIn</a> &#8212; <span class="refentry-description">Function to shift 8-bit value appearing on dpin</span></li>
+
+
+
+
+
+<li><a href="RPI_shiftOut.html" class="refentry">RPI_shiftOut</a> &#8212; <span class="refentry-description">Function to shift out 8-bit data with value=val</span></li>
+
+
+
+
+
+<li><a href="RPI_sn3218Setup.html" class="refentry">RPI_sn3218Setup</a> &#8212; <span class="refentry-description">Function for setting up SN3218 I2C based LED controller.</span></li>
+
+
+
+
+
+<li><a href="RPI_softPwmCreate.html" class="refentry">RPI_softPwmCreate</a> &#8212; <span class="refentry-description">Function to set up software pwm on a given pin</span></li>
+
+
+
+
+
+<li><a href="RPI_softPwmStop.html" class="refentry">RPI_softPwmStop</a> &#8212; <span class="refentry-description">Function to stop the software pwm on the pin</span></li>
+
+
+
+
+
+<li><a href="RPI_softPwmWrite.html" class="refentry">RPI_softPwmWrite</a> &#8212; <span class="refentry-description">Function to update the softpwm value on the pin</span></li>
+
+
+
+
+
+<li><a href="RPI_softToneCreate.html" class="refentry">RPI_softToneCreate</a> &#8212; <span class="refentry-description">Function to create a software controlled tone pin</span></li>
+
+
+
+
+
+<li><a href="RPI_softToneStop.html" class="refentry">RPI_softToneStop</a> &#8212; <span class="refentry-description">Function to stop the software tone on the pin</span></li>
+
+
+
+
+
+<li><a href="RPI_softToneWrite.html" class="refentry">RPI_softToneWrite</a> &#8212; <span class="refentry-description">Function to update tone frquency on the soft tone pin</span></li>
+
+
+
+
+
+<li><a href="RPI_sr595Setup.html" class="refentry">RPI_sr595Setup</a> &#8212; <span class="refentry-description">Function to setup sr5595 shift register chips</span></li>
+
+
+
+
+
+<li><a href="RPI_unlock.html" class="refentry">RPI_unlock</a> &#8212; <span class="refentry-description">Function to synchronize variable updates from the main program to any threads running in the program</span></li>
+
+
+
+
+
+<li><a href="RPI_waitForInterrupt.html" class="refentry">RPI_waitForInterrupt</a> &#8212; <span class="refentry-description">Function to set a pin to wait for interrupt.</span></li>
+
+
+
+
+
+<li><a href="RPI_wpiToGpio.html" class="refentry">RPI_wpiToGpio</a> &#8212; <span class="refentry-description">Function to check the GPIO pin number corresponding to given wiringpi pin number.</span></li>
+
+
+
+
+
+<li><a href="raspi.html" class="refentry">raspi</a> &#8212; <span class="refentry-description">Function to initiate the connection to the raspberry pi</span></li>
+
+
+
+
+
+<li><a href="raspi_close.html" class="refentry">raspi_close</a> &#8212; <span class="refentry-description">Function to close an open Raspberry-Pi connection.</span></li></ul>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="index.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

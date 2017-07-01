@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a9076c11fe47393be7855e530f60be6cc SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CRead.xml">
+<!ENTITY ab61ee0523bef5cc997607812b014a876 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CReadReg16.xml">
+<!ENTITY af6bab17b8d92c131da8dbda0c9dac79e SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CReadReg8.xml">
+<!ENTITY a8e9561fe4ff7c79a7ae15f6caefea252 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CSetup.xml">
+<!ENTITY aa99c4ee8a08930d6b055bc123a2b3da7 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CSetupInterface.xml">
+<!ENTITY a066183b6b7b3ae19adec6a9c1511876a SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CWrite.xml">
+<!ENTITY aa567f622a68c42f5d771746e8892b186 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CWriteReg16.xml">
+<!ENTITY abe9c6013d86dcaea0a1f714c805c775b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_I2CWriteReg8.xml">
+<!ENTITY a5088cb6270b30e10a2ccfff380c85b66 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_SPIDataRW.xml">
+<!ENTITY a4d1c119fea1b3c268e2c11ce48ea867c SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_SPISetup.xml">
+<!ENTITY a4d667b8be2c548742d82086b3c097f91 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_adress.xml">
+<!ENTITY a92aff585c0de53eaac28a7d8cb5ef5de SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_analogRead.xml">
+<!ENTITY aceecd59481c6c3c6897df443d3b43c5e SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_analogWrite.xml">
+<!ENTITY a48f54b1ab942895e988e0416fed0e0ca SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_boardRev.xml">
+<!ENTITY af7b7a7079f150255f919d34699be4df5 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_commande.xml">
+<!ENTITY a06319d6b3ed12f2ae92525236d986395 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_delay.xml">
+<!ENTITY a3851cc69c34d5c6831393b533923b9fb SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_delayMicro.xml">
+<!ENTITY a0c0af7ca0ffdd528688793a6281f7199 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_digitalRead.xml">
+<!ENTITY aae546f5a5bca353e732d4e96deb437d0 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_digitalReadByte.xml">
+<!ENTITY a757d6cae706013b51d326c8ab5a58483 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_digitalWrite.xml">
+<!ENTITY a76c1bd4d76dd8515c8e88344d470067e SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_digitalWriteByte.xml">
+<!ENTITY a283765e610b0971ab861494cfc211e11 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_gertboardAnalogRead.xml">
+<!ENTITY a2c6c7131cc319cb1e53d7f5992580813 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_gertboardAnalogSetup.xml">
+<!ENTITY a4ec3773ed7433ff680a55790a365d4ea SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_gertboardAnalogWrite.xml">
+<!ENTITY affb19a13c0b7d8920cd8ea89c874cdb3 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_gertboardSPISetup.xml">
+<!ENTITY ae9f1d72bfa2208a6f31194fcf6e23696 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_getAlt.xml">
+<!ENTITY af98c291221d7c9ae965a29b9643b146d SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_i2cdetect.xml">
+<!ENTITY aebab9adffbf3a9104fd10b5a3b76aef8 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64Orientation.xml">
+<!ENTITY addf869c9a8e482dafc245babd5699d0b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64circle.xml">
+<!ENTITY ac4ee9a650f2e41d954b0758de6178a70 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64clear.xml">
+<!ENTITY aa4de2376598ffff24e6ead5ba6801bae SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64ellipse.xml">
+<!ENTITY a8b5ce7a26ea16049b691148e2928f642 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64line.xml">
+<!ENTITY a8a817c6f26c86ddfeb1515a51330a459 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64lineTo.xml">
+<!ENTITY a9d3b0303fa8a5a3db187e6653995dce0 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64point.xml">
+<!ENTITY a813677bdbf10830ca403042877298269 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64putchar.xml">
+<!ENTITY adb152e5034db46f9e9efb1ecfe9b7cd1 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64puts.xml">
+<!ENTITY a8d310e9c8cc4d0eb0654195c2fe8b92b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64rectangle.xml">
+<!ENTITY af0999c4aee5f624e56c6ee88fbf58987 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64setOrigin.xml">
+<!ENTITY ac8157ea73f1b37f6524826984d684668 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcd128x64setup.xml">
+<!ENTITY a2dfbc7f9ce7ceb74fec4618f96594cda SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdCharDef.xml">
+<!ENTITY aa7dbb3c3ccfa2fc9b0728d310e258361 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdClear.xml">
+<!ENTITY a43052e5243d8a2d63aa2ba6406d22053 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdCursor.xml">
+<!ENTITY ac1362405bef1b693ad737d431c199c46 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdCursorBlink.xml">
+<!ENTITY aa3d27deb361d5614a13a5647c0de7a25 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdDisplay.xml">
+<!ENTITY a7800c520e4bd088ba6fdae575556900f SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdHome.xml">
+<!ENTITY ada1a4679a39fb1cc167ee93638d31892 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdInit.xml">
+<!ENTITY a0624ac811c297eab2825f597201fb660 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdPosition.xml">
+<!ENTITY ac512b5f651e5270fd6f4a73764d93392 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdPrintf.xml">
+<!ENTITY af29046331dc2a4edb7723fe21c01d407 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdPutchar.xml">
+<!ENTITY a98b8402c88d3aa33f7c4b3b9294c0909 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdPuts.xml">
+<!ENTITY ab081bcc8af16538b273a174e22ef1cad SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lcdSendCommand.xml">
+<!ENTITY ab5e46a4e398fc488cab097820152bd81 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_lock.xml">
+<!ENTITY ab232715efbfca9d1260b52aeb36818f8 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_mcp23008Setup.xml">
+<!ENTITY ae45f447e44055fa879343acb25bd9a3b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_mcp23016Setup.xml">
+<!ENTITY a8bfde185ad6c64587d993cfdcc103c60 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_mcp23017Setup.xml">
+<!ENTITY add92312f21b38683027e607e5119c6eb SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_mcp23s08Setup.xml">
+<!ENTITY aa368ed2e0d154aac66756de573058c09 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_mcp23s17Setup.xml">
+<!ENTITY a6a0f3f7f799e08c1d060f982f4f9b044 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_micros.xml">
+<!ENTITY a5be22de1a06afee399dedc257d4e3b63 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_millis.xml">
+<!ENTITY a58d58c52e34178a45c6b56055abc31fa SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_padDrive.xml">
+<!ENTITY a49edf0c71c19b5cda37623cd3b022b49 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pcf8574Setup.xml">
+<!ENTITY a5909a294447850daca503dc61bf3ca8f SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pcf8591Setup.xml">
+<!ENTITY abfc2bbeb5dbc75b0f9a765a3b3d43188 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_physToGpio.xml">
+<!ENTITY adf4f1607206b8523147d555ffa8b822e SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_piGlow1.xml">
+<!ENTITY adae2fce82784f07d1473fdffaaa6329b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_piGlowLeg.xml">
+<!ENTITY ae397ea906a54c13baceeb9f5737e9e54 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_piGlowRing.xml">
+<!ENTITY a7ef5e0bd6a0f7d00e35d85c6c8906f27 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_piGlowSetup.xml">
+<!ENTITY a2c3ea83a74e766a822cf9914efca8fb9 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pinMode.xml">
+<!ENTITY a7f60db46cec69eac483dbf53c44e65e3 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pinModeAlt.xml">
+<!ENTITY a28c015f0ee61f14ee7cf7315c119f247 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pinNumbering.xml">
+<!ENTITY a0ee8c274e43710c0964b2df1698eef56 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_priority.xml">
+<!ENTITY a4626e1d1a0f786464e199186d558d947 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pullControl.xml">
+<!ENTITY a1669b025181e7d1816bce91c2bfeea86 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pwmClock.xml">
+<!ENTITY a3c8742e6a4fa5b1030d13ce7ea374e37 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pwmMode.xml">
+<!ENTITY a776dd3ddf5af8e006f211124eee7fb90 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pwmRange.xml">
+<!ENTITY ab5c18d4bd502d742bafc49176c935a9d SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pwmToneWrite.xml">
+<!ENTITY a0f9e9e254cf9b5cdfaaff41390571343 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_pwmWrite.xml">
+<!ENTITY a55f3a186705668199912c612ce2a3493 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_send.xml">
+<!ENTITY a164b2792becb98cc95cc2671549e81a8 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialClose.xml">
+<!ENTITY aeb746fe9286c9251c04a7e74ca9941dd SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialDataAvail.xml">
+<!ENTITY acf85ffa30e4949658afb1abc684e6aaa SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialFlush.xml">
+<!ENTITY aabdf1e6a3ed571ec3ab859002772bc6b SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialGetchar.xml">
+<!ENTITY aa64b04b5351872277fa5cf713745203d SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialOpen.xml">
+<!ENTITY ad64052482c4fcec5a54c3fcc3e75845f SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialPrintf.xml">
+<!ENTITY a88cd667df7556e900bb4144412093fa1 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialPutchar.xml">
+<!ENTITY aa239407ecf2c58c8620f3364a0cee6ab SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_serialPuts.xml">
+<!ENTITY ab6ec3271c990ef950783d163698c638d SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_shiftIn.xml">
+<!ENTITY afe8cd2bcaa4183fdec108dd0ddacb719 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_shiftOut.xml">
+<!ENTITY a9249a7d3e4a35271f7246f0fd5046898 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_sn3218Setup.xml">
+<!ENTITY a874ba7c155ec6baaa1378536eca606cd SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softPwmCreate.xml">
+<!ENTITY a430aab4dbe26bf8bd221c7d3a420abac SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softPwmStop.xml">
+<!ENTITY a70e5aa3a8ff98317b60cc1bb813dac09 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softPwmWrite.xml">
+<!ENTITY a6250139a40b172432682ff2caf3c6a68 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softToneCreate.xml">
+<!ENTITY a60a6edcb972d09f73f5968e7cb864874 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softToneStop.xml">
+<!ENTITY ae1dd6e6700367f224cb3a2a0bbf7a12c SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_softToneWrite.xml">
+<!ENTITY a3a56777278def53eaf540f598a6895c8 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_sr595Setup.xml">
+<!ENTITY abcecec8f5bfe06608019afa68ead49d0 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_unlock.xml">
+<!ENTITY acd6be8d7de900d6ecb92d43b02ab1c91 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_waitForInterrupt.xml">
+<!ENTITY a2b6d3862705d5704af9f611dbb0a8a14 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/RPI_wpiToGpio.xml">
+<!ENTITY a8e76eef82326a9f52da766eb6217298a SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/raspi.xml">
+<!ENTITY af9d16504729e629877f3aab2879345c8 SYSTEM "/home/panda/.Scilab/scilab-5.5.2/atoms/RPI_LANControl/1.0/help/en_US/raspi_close.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="en_US"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='raspberry_pi_lan_control_manual'>
+    <title>Raspberry Pi LAN Control</title>
+  </info>
+
+<part xml:id='section_cabfeefa8e519c8691be3f673d67f85d'>
+<title>Raspberry Pi LAN Control</title>
+&a9076c11fe47393be7855e530f60be6cc;
+&ab61ee0523bef5cc997607812b014a876;
+&af6bab17b8d92c131da8dbda0c9dac79e;
+&a8e9561fe4ff7c79a7ae15f6caefea252;
+&aa99c4ee8a08930d6b055bc123a2b3da7;
+&a066183b6b7b3ae19adec6a9c1511876a;
+&aa567f622a68c42f5d771746e8892b186;
+&abe9c6013d86dcaea0a1f714c805c775b;
+&a5088cb6270b30e10a2ccfff380c85b66;
+&a4d1c119fea1b3c268e2c11ce48ea867c;
+&a4d667b8be2c548742d82086b3c097f91;
+&a92aff585c0de53eaac28a7d8cb5ef5de;
+&aceecd59481c6c3c6897df443d3b43c5e;
+&a48f54b1ab942895e988e0416fed0e0ca;
+&af7b7a7079f150255f919d34699be4df5;
+&a06319d6b3ed12f2ae92525236d986395;
+&a3851cc69c34d5c6831393b533923b9fb;
+&a0c0af7ca0ffdd528688793a6281f7199;
+&aae546f5a5bca353e732d4e96deb437d0;
+&a757d6cae706013b51d326c8ab5a58483;
+&a76c1bd4d76dd8515c8e88344d470067e;
+&a283765e610b0971ab861494cfc211e11;
+&a2c6c7131cc319cb1e53d7f5992580813;
+&a4ec3773ed7433ff680a55790a365d4ea;
+&affb19a13c0b7d8920cd8ea89c874cdb3;
+&ae9f1d72bfa2208a6f31194fcf6e23696;
+&af98c291221d7c9ae965a29b9643b146d;
+&aebab9adffbf3a9104fd10b5a3b76aef8;
+&addf869c9a8e482dafc245babd5699d0b;
+&ac4ee9a650f2e41d954b0758de6178a70;
+&aa4de2376598ffff24e6ead5ba6801bae;
+&a8b5ce7a26ea16049b691148e2928f642;
+&a8a817c6f26c86ddfeb1515a51330a459;
+&a9d3b0303fa8a5a3db187e6653995dce0;
+&a813677bdbf10830ca403042877298269;
+&adb152e5034db46f9e9efb1ecfe9b7cd1;
+&a8d310e9c8cc4d0eb0654195c2fe8b92b;
+&af0999c4aee5f624e56c6ee88fbf58987;
+&ac8157ea73f1b37f6524826984d684668;
+&a2dfbc7f9ce7ceb74fec4618f96594cda;
+&aa7dbb3c3ccfa2fc9b0728d310e258361;
+&a43052e5243d8a2d63aa2ba6406d22053;
+&ac1362405bef1b693ad737d431c199c46;
+&aa3d27deb361d5614a13a5647c0de7a25;
+&a7800c520e4bd088ba6fdae575556900f;
+&ada1a4679a39fb1cc167ee93638d31892;
+&a0624ac811c297eab2825f597201fb660;
+&ac512b5f651e5270fd6f4a73764d93392;
+&af29046331dc2a4edb7723fe21c01d407;
+&a98b8402c88d3aa33f7c4b3b9294c0909;
+&ab081bcc8af16538b273a174e22ef1cad;
+&ab5e46a4e398fc488cab097820152bd81;
+&ab232715efbfca9d1260b52aeb36818f8;
+&ae45f447e44055fa879343acb25bd9a3b;
+&a8bfde185ad6c64587d993cfdcc103c60;
+&add92312f21b38683027e607e5119c6eb;
+&aa368ed2e0d154aac66756de573058c09;
+&a6a0f3f7f799e08c1d060f982f4f9b044;
+&a5be22de1a06afee399dedc257d4e3b63;
+&a58d58c52e34178a45c6b56055abc31fa;
+&a49edf0c71c19b5cda37623cd3b022b49;
+&a5909a294447850daca503dc61bf3ca8f;
+&abfc2bbeb5dbc75b0f9a765a3b3d43188;
+&adf4f1607206b8523147d555ffa8b822e;
+&adae2fce82784f07d1473fdffaaa6329b;
+&ae397ea906a54c13baceeb9f5737e9e54;
+&a7ef5e0bd6a0f7d00e35d85c6c8906f27;
+&a2c3ea83a74e766a822cf9914efca8fb9;
+&a7f60db46cec69eac483dbf53c44e65e3;
+&a28c015f0ee61f14ee7cf7315c119f247;
+&a0ee8c274e43710c0964b2df1698eef56;
+&a4626e1d1a0f786464e199186d558d947;
+&a1669b025181e7d1816bce91c2bfeea86;
+&a3c8742e6a4fa5b1030d13ce7ea374e37;
+&a776dd3ddf5af8e006f211124eee7fb90;
+&ab5c18d4bd502d742bafc49176c935a9d;
+&a0f9e9e254cf9b5cdfaaff41390571343;
+&a55f3a186705668199912c612ce2a3493;
+&a164b2792becb98cc95cc2671549e81a8;
+&aeb746fe9286c9251c04a7e74ca9941dd;
+&acf85ffa30e4949658afb1abc684e6aaa;
+&aabdf1e6a3ed571ec3ab859002772bc6b;
+&aa64b04b5351872277fa5cf713745203d;
+&ad64052482c4fcec5a54c3fcc3e75845f;
+&a88cd667df7556e900bb4144412093fa1;
+&aa239407ecf2c58c8620f3364a0cee6ab;
+&ab6ec3271c990ef950783d163698c638d;
+&afe8cd2bcaa4183fdec108dd0ddacb719;
+&a9249a7d3e4a35271f7246f0fd5046898;
+&a874ba7c155ec6baaa1378536eca606cd;
+&a430aab4dbe26bf8bd221c7d3a420abac;
+&a70e5aa3a8ff98317b60cc1bb813dac09;
+&a6250139a40b172432682ff2caf3c6a68;
+&a60a6edcb972d09f73f5968e7cb864874;
+&ae1dd6e6700367f224cb3a2a0bbf7a12c;
+&a3a56777278def53eaf540f598a6895c8;
+&abcecec8f5bfe06608019afa68ead49d0;
+&acd6be8d7de900d6ecb92d43b02ab1c91;
+&a2b6d3862705d5704af9f611dbb0a8a14;
+&a8e76eef82326a9f52da766eb6217298a;
+&af9d16504729e629877f3aab2879345c8;
+</part>
+</book>

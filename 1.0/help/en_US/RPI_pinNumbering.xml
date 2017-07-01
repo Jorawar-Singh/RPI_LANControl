@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_pinNumbering.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_pinNumbering" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_pinNumbering</refname>
+    <refpurpose>Function to initialize wiringpi with the number sequence to be followed.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_pinNumbering(pinSetup)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pinSetup:</term>
+      <listitem><para> The pin number sequence to follow</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function must be called at the start of the program or the program will fail to work correctly. It tells the wiringpi which number sequence will be used to work on Raspberry Pi. Returns 0 if no errors encountered. Pin maps for the different pinSetups can be found at the link in bibliography.
+   </para>
+   <para>
+pinSetup can take the following values:
+<itemizedlist>
+<listitem>'wiringpi' -> This initialises wiringPi and assumes that the calling program is going to be using the wiringPi pin numbering scheme. This is a simplified numbering scheme which provides a mapping from virtual pin numbers to the real underlying Broadcom GPIO pin numbers.</listitem>
+<listitem>'GPIO'     -> Same as above, however it allows the calling programs to use the Broadcom GPIO pin numbers directly with no re-mapping.</listitem>
+<listitem>'phys'     -> Identical to above, however it allows the calling programs to use the physical pin numbers on the P1 connector only.</listitem>
+</itemizedlist>
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_pinNumbering('wiringpi')
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

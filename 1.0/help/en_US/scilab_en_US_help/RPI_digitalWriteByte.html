@@ -1,0 +1,84 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RPI_digitalWriteByte</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_digitalWrite.html">&lt;&lt; RPI_digitalWrite</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_gertboardAnalogRead.html">RPI_gertboardAnalogRead &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">Raspberry Pi LAN Control</a> &gt;&gt; <a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a> &gt; RPI_digitalWriteByte</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">RPI_digitalWriteByte</h1>
+    <p class="refpurpose">Function to set first eight GPIO pins to a particular value</p></div>
+
+
+<div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3>
+   <div class="synopsis"><pre><span class="functionid">RPI_digitalWriteByte</span><span class="default">(</span><span class="default">Byte</span><span class="default">)</span></pre></div></div>
+
+<div class="refsection"><h3 class="title">Parameters</h3>
+   <dl><dt><span class="term">Byte:</span>
+      <dd><p class="para">An 8-bit byte to write on the first 8 GPIO pins. Inter from 0 to 255.</p></dd></dt></dl></div>
+
+<div class="refsection"><h3 class="title">Description</h3>
+   <p class="para">This writes the 8-bit byte supplied to the first 8 GPIO pins. It’s the fastest way to set all 8 bits at once to a particular value, although it still takes two write operations to the Pi’s GPIO hardware. The state is written from pin7 to pin0.</p>
+   <p class="para">Note: The MSB-LSB sequence here is opposite to that from RPI_digitalReadByte.</p>
+   <p class="para"></p></div>
+
+<div class="refsection"><h3 class="title">Examples</h3>
+   <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">RPI_digitalWriteByte</span><span class="scilabopenclose">(</span><span class="scilabnumber">128</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+
+<div class="refsection"><h3 class="title">See also</h3>
+   <ul class="itemizedlist"><li class="member"><a href="scilab://RPI_digitalReadByte," class="link">RPI_digitalWrite</a></li></ul></div>
+
+<div class="refsection"><h3 class="title">Authors</h3>
+   <ul class="itemizedlist"><li class="member">Jorawar Singh</li></ul></div>
+
+<div class="refsection"><h3 class="title">Bibliography</h3>
+   <p class="para">http://wiringpi.com/reference/</p></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_digitalWrite.html">&lt;&lt; RPI_digitalWrite</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_gertboardAnalogRead.html">RPI_gertboardAnalogRead &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_gertboardAnalogWrite.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_gertboardAnalogWrite" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_gertboardAnalogWrite</refname>
+    <refpurpose>Function to write voltage value to pins on gertboard</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_gertboardAnalogWrite(pin,value)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pin  :</term>
+      <listitem><para> the pin to read the voltage from. Numbering follows the pinBase from RPI_gertboardSetup function.</para></listitem></varlistentry>
+   <varlistentry><term>value:</term>
+      <listitem><para> voltage value to write</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+After initialinzing the pinBase using the RPI_gertboeardSetup function, writing pinBase + 0 outputs to the first analog output channel. (Pin AD0).
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_gertboardAnalogWrite(100,100)
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_gertboardAnalogSetup,">RPI_gertboardAnalogRead, RPI_gertboardSPISetup</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+   <para>http://pi4j.com/apidocs/com/pi4j/wiringpi/Gertboard.html</para>
+</refsection>
+</refentry>

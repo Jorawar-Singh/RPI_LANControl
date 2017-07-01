@@ -1,0 +1,92 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RPI_pullControl</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_priority.html">&lt;&lt; RPI_priority</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_pwmClock.html">RPI_pwmClock &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">Raspberry Pi LAN Control</a> &gt;&gt; <a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a> &gt; RPI_pullControl</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">RPI_pullControl</h1>
+    <p class="refpurpose">Function to change the internal pull up/down resistor setting for a given pin.</p></div>
+
+
+<div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3>
+   <div class="synopsis"><pre><span class="functionid">RPI_pullControl</span><span class="default">(</span><span class="default">pin</span><span class="default">,</span><span class="default">RMode</span><span class="default">)</span></pre></div></div>
+
+<div class="refsection"><h3 class="title">Parameters</h3>
+   <dl><dt><span class="term">pin :</span>
+      <dd><p class="para">The pin number to act on. Numbering sequence to be followed as initiated using RPI_pinNumbering function.</p></dd></dt>
+   <dt><span class="term">RMode:</span>
+      <dd><p class="para">The mode for the internal resistance of the given pin.</p></dd></dt></dl></div>
+
+<div class="refsection"><h3 class="title">Description</h3>
+   <p class="para">This sets the pull-up or pull-down resistor mode on the given pin, which should be set as an input using the PRI_pinMode function. The internal pull up/down
+resistors have a value of approximately 50KΩ on the Raspberry Pi.</p>
+   <p class="para">RMode can take values:
+<ul class="itemizedlist"><li>&#0039;up&#0039;  -&gt; pull to 3.3v</li>
+<li>&#0039;down&#0039;-&gt; pull to ground</li>
+<li>&#0039;none&#0039;-&gt; no pull up/down</li></ul></p>
+   <p class="para">This function has no effect on the Raspberry Pi’s GPIO pins when in sys mode, set using RPI_pinNumbering function. To activate a pull-up/pull-down, use the gpio
+program in a script before starting the program.</p>
+   <p class="para"></p></div>
+
+<div class="refsection"><h3 class="title">Examples</h3>
+   <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">RPI_pullControl</span><span class="scilabopenclose">(</span><span class="scilabnumber">0</span><span class="scilabdefault">,</span><span class="scilabstring">&#0039;</span><span class="scilabstring">down</span><span class="scilabstring">&#0039;</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+
+<div class="refsection"><h3 class="title">See also</h3>
+   <ul class="itemizedlist"><li class="member"><a href="scilab://RPI_pinNumbering," class="link">RPI_pinMode</a></li></ul></div>
+
+<div class="refsection"><h3 class="title">Authors</h3>
+   <ul class="itemizedlist"><li class="member">Jorawar Singh</li></ul></div>
+
+<div class="refsection"><h3 class="title">Bibliography</h3>
+   <p class="para">http://wiringpi.com/reference/</p></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_priority.html">&lt;&lt; RPI_priority</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_pwmClock.html">RPI_pwmClock &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>

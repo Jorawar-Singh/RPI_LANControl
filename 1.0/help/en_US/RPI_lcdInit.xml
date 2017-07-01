@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_lcdInit.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_lcdInit" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_lcdInit</refname>
+    <refpurpose>Function to initialize lcd</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_lcdInit(rows,cols,bits,rs,strb,d0,d1,d2,d3,d4,d5,d6,d7)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>rows:</term>
+      <listitem><para> numer of rows in lcd</para></listitem></varlistentry>
+   <varlistentry><term>cols:</term>
+      <listitem><para> numer of colums in lcd</para></listitem></varlistentry>
+   <varlistentry><term>bits:</term>
+      <listitem><para> number of bits wide on the interface (4 or 8)</para></listitem></varlistentry>
+   <varlistentry><term>rs  :</term>
+      <listitem><para> pin number of display RS</para></listitem></varlistentry>
+   <varlistentry><term>strb:</term>
+      <listitem><para> pin number of strobe (E)</para></listitem></varlistentry>
+   <varlistentry><term>d0  :</term>
+      <listitem><para> pin number of data pin 1</para></listitem></varlistentry>
+   <varlistentry><term>d1  :</term>
+      <listitem><para> pin number of data pin 2</para></listitem></varlistentry>
+   <varlistentry><term>d2  :</term>
+      <listitem><para> pin number of data pin 3</para></listitem></varlistentry>
+   <varlistentry><term>d3  :</term>
+      <listitem><para> pin number of data pin 4</para></listitem></varlistentry>
+   <varlistentry><term>d4  :</term>
+      <listitem><para> pin number of data pin 5</para></listitem></varlistentry>
+   <varlistentry><term>d5  :</term>
+      <listitem><para> pin number of data pin 6</para></listitem></varlistentry>
+   <varlistentry><term>d6  :</term>
+      <listitem><para> pin number of data pin 7</para></listitem></varlistentry>
+   <varlistentry><term>d7  :</term>
+      <listitem><para> pin number of data pin 8</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function initalizes an lcd display attaced to the Raspberry pi. The return value is the file-descriptor to be used for all subsequent calls to the lcd library when dealing with that LCD, or -1 to indicate a fault. (Usually incorrect parameters)
+   </para>
+   <para>
+The numberin sequence to be followed as initiated using RPI_pinNumbering
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+fd=RPI_lcdInit (2,16,8,11,10,0,1,2,3,4,5,6,7) ;
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_lcdCursorBlink,">RPI_lcdCharDef, RPI_lcdClear, RPI_lcdCursor, RPI_lcdDisplay, RPI_lcdHome, RPI_lcdPutchar, RPI_lcdPosition, RPI_lcdPrintf, RPI_lcdPuts, RPI_lcdSendCommand, RPI_pinNumbering</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

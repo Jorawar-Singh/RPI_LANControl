@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_pullControl.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_pullControl" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_pullControl</refname>
+    <refpurpose>Function to change the internal pull up/down resistor setting for a given pin.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_pullControl(pin,RMode)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pin :</term>
+      <listitem><para> The pin number to act on. Numbering sequence to be followed as initiated using RPI_pinNumbering function.</para></listitem></varlistentry>
+   <varlistentry><term>RMode:</term>
+      <listitem><para> The mode for the internal resistance of the given pin.</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This sets the pull-up or pull-down resistor mode on the given pin, which should be set as an input using the PRI_pinMode function. The internal pull up/down
+resistors have a value of approximately 50KΩ on the Raspberry Pi.
+   </para>
+   <para>
+RMode can take values:
+<itemizedlist>
+<listitem>'up'  -> pull to 3.3v</listitem>
+<listitem>'down'-> pull to ground</listitem>
+<listitem>'none'-> no pull up/down</listitem>
+</itemizedlist>
+   </para>
+   <para>
+This function has no effect on the Raspberry Pi’s GPIO pins when in sys mode, set using RPI_pinNumbering function. To activate a pull-up/pull-down, use the gpio
+program in a script before starting the program.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_pullControl(0,'down')
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_pinNumbering,">RPI_pinMode</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

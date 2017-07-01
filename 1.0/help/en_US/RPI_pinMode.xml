@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from RPI_pinMode.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="RPI_pinMode" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>RPI_pinMode</refname>
+    <refpurpose>Function to set the mode of the given pin.</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Calling Sequence</title>
+   <synopsis>
+   RPI_pinMode(pin,Mode)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+   <varlistentry><term>pin :</term>
+      <listitem><para> The pin number to act on. Numbering sequence to be followed as initiated using RPI_pinNumbering function.</para></listitem></varlistentry>
+   <varlistentry><term>Mode:</term>
+      <listitem><para> The mode in which to set the pin.</para></listitem></varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+This function configures the Raspberry Pi's given pin to work as the given mode (input/output/pwm/clock). Not all functions are available to all the pins.
+   </para>
+   <para>
+Mode can take the following values-
+<itemizedlist>
+<listitem><para>'in'    -> sets the pin as input</para></listitem>
+<listitem><para>'out'   -> sets the pin as output</para></listitem>
+<listitem><para>'pwm'   -> sets the pin to PWM output. Only wiringPi pin 1 (BCM_GPIO pin 18) supports this function.</para></listitem>
+<listitem><para>'clock' -> sets the pin to CLOCK output. Only wiringPi pin 7 (BCM_GPIO pin 4) supports this function.</para></listitem>
+</itemizedlist>
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+RPI_pinMode(0,'out')
+   ]]></programlisting>
+</refsection>
+
+<refsection>
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="RPI_pinNumbering">RPI_pinNumbering</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Jorawar Singh</member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Bibliography</title>
+   <para>http://wiringpi.com/reference/</para>
+</refsection>
+</refentry>

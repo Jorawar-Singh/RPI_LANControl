@@ -1,0 +1,91 @@
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>RPI_sr595Setup</title>
+    <style type="text/css" media="all">
+      @import url("scilab_code.css");
+      @import url("xml_code.css");
+      @import url("c_code.css");
+      @import url("style.css");
+    </style>
+  </head>
+  <body>
+    <div class="manualnavbar">
+    <table width="100%"><tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_softToneWrite.html">&lt;&lt; RPI_softToneWrite</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_unlock.html">RPI_unlock &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+
+
+
+    <span class="path"><a href="index.html">Raspberry Pi LAN Control</a> &gt;&gt; <a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a> &gt; RPI_sr595Setup</span>
+
+    <br /><br />
+    <div class="refnamediv"><h1 class="refname">RPI_sr595Setup</h1>
+    <p class="refpurpose">Function to setup sr5595 shift register chips</p></div>
+
+
+<div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3>
+   <div class="synopsis"><pre><span class="functionid">RPI_sr595Setup</span><span class="default">(</span><span class="default">pinBase</span><span class="default">,</span><span class="default">numPins</span><span class="default">,</span><span class="default">dataPin</span><span class="default">,</span><span class="default">clockPin</span><span class="default">,</span><span class="default">latchPin</span><span class="default">)</span></pre></div></div>
+
+<div class="refsection"><h3 class="title">Parameters</h3>
+   <dl><dt><span class="term">pinBase :</span>
+      <dd><p class="para">any number above 64. Consecutive number of numPins will be allocated alongwith.</p></dd></dt>
+   <dt><span class="term">numPins :</span>
+      <dd><p class="para">number of pins, can be 0-32, 8 pins per 74x595</p></dd></dt>
+   <dt><span class="term">dataPin :</span>
+      <dd><p class="para">The Raspberry pin corresponding to the 74x595&#0039;s data pin. Numbering sequence to be followed as initiated by RPI_pinNumbering function.</p></dd></dt>
+   <dt><span class="term">clockPin:</span>
+      <dd><p class="para">The Raspberry pin corresponding to the 74x595&#0039;s clock pin. Numbering sequence to be followed as initiated by RPI_pinNumbering function.</p></dd></dt>
+   <dt><span class="term">latchPin:</span>
+      <dd><p class="para">The Raspberry pin corresponding to the 74x595&#0039;s latch pin. Numbering sequence to be followed as initiated by RPI_pinNumbering function.</p></dd></dt></dl></div>
+
+<div class="refsection"><h3 class="title">Description</h3>
+   <p class="para">This function sets up the extension module for the 74×595 shift register chips which can be used as general purpose output ports. Each instance can support up to 4 74×595’s daisy-chained together, giving a 32-bit output port using just 3 GPIO wires from the Raspberry Pi (or from any other GPIO expansion port connected to the Pi) One can have as many instances of these enabled in the system, provided there are 3 spare GPIO pins per instance.</p>
+   <p class="para"></p></div>
+
+<div class="refsection"><h3 class="title">Examples</h3>
+   <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabid">RPI_sr595Setup</span><span class="scilabopenclose">(</span><span class="scilabnumber">100</span><span class="scilabdefault">,</span><span class="scilabnumber">10</span><span class="scilabdefault">,</span><span class="scilabnumber">0</span><span class="scilabdefault">,</span><span class="scilabnumber">1</span><span class="scilabdefault">,</span><span class="scilabnumber">2</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+
+<div class="refsection"><h3 class="title">See also</h3>
+   <ul class="itemizedlist"><li class="member"><a href="scilab://RPI_sn3218Setup," class="link">RPI_pcf8574Setup, RPI_pcf8591Setup, RPI_mcp23008Setup, RPI_mcp23016Setup, RPI_mcp23017Setup, RPI_mcp23s08Setup, RPI_mcp23s17Setup, RPI_pinNumbering</a></li></ul></div>
+
+<div class="refsection"><h3 class="title">Authors</h3>
+   <ul class="itemizedlist"><li class="member">Jorawar Singh</li></ul></div>
+
+<div class="refsection"><h3 class="title">Bibliography</h3>
+   <p class="para">http://wiringpi.com/reference/</p></div>
+    <br />
+
+    <div class="manualnavbar">
+    <table width="100%">
+    <tr><td colspan="3" class="next"><a href="http://bugzilla.scilab.org/enter_bug.cgi?product=Scilab%20software&component=Documentation%20pages" class="ulink">Report an issue</a></td></tr>
+<tr>
+      <td width="30%">
+    	<span class="previous"><a href="RPI_softToneWrite.html">&lt;&lt; RPI_softToneWrite</a></span>
+
+      </td>
+      <td width="40%" class="center">
+      	<span class="top"><a href="section_cabfeefa8e519c8691be3f673d67f85d.html">Raspberry Pi LAN Control</a></span>
+
+      </td>
+      <td width="30%" class="next">
+      	<span class="next"><a href="RPI_unlock.html">RPI_unlock &gt;&gt;</a></span>
+
+      </td>
+    </tr></table>
+      <hr />
+    </div>
+  </body>
+</html>
