@@ -38,10 +38,9 @@ One can bypass the need of ssh by manually running the python script, as sudo,(a
 The basic implementation uses the python wrapper of wiringpi to run commands on the Pi.
 The setup initiates a python server on the Pi at port 9077. All the consecutive commands sends an encoded string to the server which decodes and performs the tasks accordingly and returns the result to scilab.
 
-install RPI_LANControl
- exec builder.sce
-load toolbox in scilab
- exec loader.sce
+install RPI_LANControl: exec builder.sce
+
+load toolbox in scilab: exec loader.sce
  
 IMPORTANT: After connecting to the Pi, either via raspi() or manually (after executing RPI_adress()),
            the first command should always be RPI_pinNumbering().
