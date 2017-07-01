@@ -1,16 +1,25 @@
 # RPI_LANControl
 
 Toolbox: RPI_LANControl
+
 Title: Raspberry Pi LAN Control
+
 Summary: RealTime control of Raspberry Pi connected via LAN
+
 Version: 1.0
+
 Author: Jorawar Singh
+
 Maintainer: Jorawar Singh <jjchandi.singh@gmail.com>
+
 Category: Hardware
+
 License: CeCILL
+
 ScilabVersion: >= 5.3
-Depends: 
-Date: 16-06-2017
+
+Date: 1-07-2017
+
 Description: RPI_LANControl is a tool to control the Raspberry Pi available on the local 
 	     network, and the hardware connected to it, directly from the scilab console.
 
