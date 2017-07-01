@@ -24,9 +24,12 @@ Description: RPI_LANControl is a tool to control the Raspberry Pi available on t
 	     network, and the hardware connected to it, directly from the scilab console.
 
 It requires:
+
   Linux  	- python, ssh
-  Windows	- python, ssh via cygwin
-  Raspberry Pi	- wiringpi python wrappper
+
+ Windows	- python, ssh via cygwin
+
+ Raspberry Pi	- wiringpi python wrappper
 
 RPI_LANControl requires ssh to initiate the communication and python for subsequent control.
 
